@@ -1,0 +1,33 @@
+<h2>Show Query</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @query.name %>
+  </li>
+
+  <li>
+    <strong>Query:</strong>
+    <%= @query.query %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @query.description %>
+  </li>
+
+  <li>
+    <strong>Osquery version:</strong>
+    <%= @query.osquery_version %>
+  </li>
+
+  <li>
+    <strong>Launcher version:</strong>
+    <%= @query.launcher_version %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: query_path(@conn, :edit, @query) %></span>
+<span><%= link "Back", to: query_path(@conn, :index) %></span>

@@ -1,0 +1,5 @@
+<h2>New Query</h2>
+
+<%= render "form.html", Map.put(assigns, :action, query_path(@conn, :create)) %>
+
+<span><%= link "Back", to: query_path(@conn, :index) %></span>
