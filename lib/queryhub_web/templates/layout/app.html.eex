@@ -7,21 +7,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello Queryhub!</title>
+    <title>Queryhub</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
-      </header>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+      <h5 class="my-0 mr-md-auto font-weight-normal">Queryhub</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="#">Home</a>
+        <a class="p-2 text-dark" href="#">Search</a>
+      </nav>
+      <a class="btn btn-outline-primary" href="#"><img src="<%= static_path(@conn, "/images/GitHub-Mark-32px.png") %>" alt="GitHub Octocat"> Sign in with GitHub</a>
+    </div>
 
+    <div class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
