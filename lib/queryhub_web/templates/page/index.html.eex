@@ -1,4 +1,4 @@
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+<div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <h1 class="display-4"><%= gettext "%{name}", name: "Queryhub" %></h1>
   <p class="lead">A community application for creating and sharing <a href="https://osquery.io">osquery</a> configuration</p>
   <p>Queryhub is an open-source web application that allows you to curate your own set of queries and packs for your osquery installation.</p>
